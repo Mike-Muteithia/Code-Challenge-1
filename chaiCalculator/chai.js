@@ -14,19 +14,21 @@ function calculatorChaiIngredients(numberOfCups) {
       }
 
     let msg = 
-    `To make ${numberOfCups} cup(s) of superb Kenyan Chai, assemble the following:
+    `
+    To make ${numberOfCups} cup(s) of superb Kenyan Chai, assemble the following:
 
     ${ingredientsAmount.waterAmount}
     ${ingredientsAmount.milkAmount}
     ${ingredientsAmount.teaLeavesAmount}
     ${ingredientsAmount.sugarAmount}
 
-    Chai Tamu!`
+    Chai Tamu!
+    `;
 
     return msg;
 }
 
-console.log(calculatorChaiIngredients(1));
+console.log(calculatorChaiIngredients(2))
 
 function promptMsg(){
     let cupsofTea = prompt("Hello, there. Chai Master! How many cups of Chai would you like to chef today?");
