@@ -20,9 +20,9 @@ function calculateBodaFare(distanceInKm) {
 
 function promptMsg(){
     let kmPrompt = prompt("Boss, unaelekea wapi? Kilometer ngapi?");
-    let numberOfKm = parseInt(kmPrompt);
+    let distanceInKm = parseInt(kmPrompt);
 
-    if (numberOfKm > 0) {
+    if (distanceInKm > 0) {
         return calculateBodaFare(distanceInKm);
     } else {
         return "Tafadhali hakikisha kuwa umeweka kilometer halali."
